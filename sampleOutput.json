@@ -1,0 +1,79 @@
+{
+  "status": "ok",
+  "totalResults": 7,
+  "articles": [
+    {
+      "source": { "id": null, "name": "BBC News" },
+      "author": "https://www.facebook.com/bbcnews",
+      "title": "US Supreme Court blocks Biden's workplace vaccine mandate - BBC News",
+      "description": "The ruling marks a major blow to a central pillar of the White House's strategy for tackling Covid-19.",
+      "url": "https://www.bbc.com/news/world-us-canada-59989476",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/F226/production/_122709916_gettyimages-1237588997.jpg",
+      "publishedAt": "2022-01-14T03:31:15Z",
+      "content": "By Natalie ShermanBusiness reporter, New York\r\nImage source, Getty Images\r\nImage caption, Americans have become intensely divided over Covid-19 vaccine mandates\r\nThe US Supreme Court has blocked Pres… [+5687 chars]"
+    },
+    {
+      "source": { "id": null, "name": "KCRA Sacramento" },
+      "author": "Stephanie Lin",
+      "title": "COVID-19 cases among kids are surging. Here's what Sacramento-area pediatricians say parents can do - KCRA Sacramento",
+      "description": "\"I don't think anyone has seen a disease like COVID-19 impact kids the way it has.\"",
+      "url": "https://www.kcra.com/article/covid-cases-among-kids-surging-sacramento-pediatricians/38761797",
+      "urlToImage": "https://kubrick.htvapps.com/vidthumb/8770b9f1-b1a6-4e59-a212-193d12640a6a/8770b9f1-b1a6-4e59-a212-193d12640a6a_image.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+      "publishedAt": "2022-01-14T02:56:00Z",
+      "content": "The number of people hospitalized with COVID-19 in the United States is the highest its ever been, and many patients are young children. \r\n\"I don't think anyone has seen a disease like COVID-19 impac… [+4129 chars]"
+    },
+    {
+      "source": { "id": null, "name": "WMUR Manchester" },
+      "author": "Jennifer Crompton",
+      "title": "Model predicts COVID-19 in New Hampshire will rise through February, drop quickly - WMUR Manchester",
+      "description": "New models predict that the omicron variant of COVID-19 in New Hampshire will lag behind the national trend, with cases and deaths climbing before dropping off quickly.",
+      "url": "https://www.wmur.com/article/model-prediction-covid-19-new-hampshire-cases-hospitalizations/38761252",
+      "urlToImage": "https://kubrick.htvapps.com/vidthumb/a0a10a1e-b0d8-4b16-a11e-ddb129458697/a0a10a1e-b0d8-4b16-a11e-ddb129458697_image.jpg?crop=1xw:1.0xh;center,top&resize=1200:*",
+      "publishedAt": "2022-01-13T23:18:00Z",
+      "content": "PORTSMOUTH, N.H. —New models predict that the omicron variant of COVID-19 in New Hampshire will lag behind the national trend, with cases and deaths climbing before dropping off quickly.\r\nResearchers… [+1954 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Quartz India" },
+      "author": "Courtney Vinopal",
+      "title": "8,000 Delta workers tested positive for covid in the last month - Quartz",
+      "description": "The airline said today that 11% of its staff tested positive for covid in the last month. The airline recently shortened its coronavirus sick leave.",
+      "url": "https://qz.com/2112899/8000-delta-workers-tested-positive-for-covid-in-the-last-month/",
+      "urlToImage": "https://cms.qz.com/wp-content/uploads/2022/01/2021-12-24T013255Z_252803271_RC2RJR9PSLW8_RTRMADP_3_HEALTH-CORONAVIRUS-USA-AIRLINES-e1642108551415.jpg?quality=75&strip=all&w=1200&h=630&crop=1",
+      "publishedAt": "2022-01-13T23:00:57Z",
+      "content": "Eight thousand Delta Airlines employees tested positive for covid-19 over the last four weeks, CEO Ed Bastian said today (Jan. 13), representing 11% of the companys total workforce.\r\nStaff absences a… [+3847 chars]"
+    },
+    {
+      "source": { "id": null, "name": "The Boston Globe" },
+      "author": null,
+      "title": "‘Mission impossible’: With Boston’s proof-of-vaccination mandate set to begin, businesses worry - BetaBoston",
+      "description": "With the rules set to take effect Saturday, some retailers say the mandate is starting to feel like yet another COVID-related burden on the backs of businesses the pandemic has hurt the most.",
+      "url": "https://www.bostonglobe.com/2022/01/13/business/mission-impossible-with-bostons-proof-of-vaccination-mandate-set-begin-businesses-worry/",
+      "urlToImage": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/s8db0nhrtGzQZhnrsBgptiTENMw=/506x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/OMI2YTVVXFOMXQVI4HVPKICTYA.jpg",
+      "publishedAt": "2022-01-13T20:34:00Z",
+      "content": "Paul Deuterio of Galleria Umberto in the North End decided to temporarily switch to a takeout-only operation until the mayor rescinds the rule. Customers inside a business for a short period, to pick… [+7494 chars]"
+    },
+    {
+      "source": { "id": null, "name": "YouTube" },
+      "author": null,
+      "title": "Nurses Call For Increased Staffing, Better Protections At Hospitals Amid Omicron Surge Of COVID-19 - CBS Chicago",
+      "description": "Nurses in Chicago and across the country are taking action on Thursday to call more attention to the staffing crisis at many hospitals. CBS 2's Asal Rezaei r...",
+      "url": "https://www.youtube.com/watch?v=uVJwP6yILG4",
+      "urlToImage": "https://i.ytimg.com/vi/uVJwP6yILG4/hqdefault.jpg",
+      "publishedAt": "2022-01-13T17:40:32Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "Max Colchester, Isabel Coles, Jason Douglas",
+      "title": "Boris Johnson’s Allies Try to Calm U.K. ‘Lockdown Party’ Furor - The Wall Street Journal",
+      "description": "British prime minister aims to buy time ahead of report into Downing Street parties alleged to have breached Covid-19 restrictions",
+      "url": "https://www.wsj.com/articles/boris-johnsons-allies-try-to-calm-u-k-lockdown-party-furor-11642092929",
+      "urlToImage": "https://images.wsj.net/im-467202/social",
+      "publishedAt": "2022-01-13T16:55:00Z",
+      "content": "LONDONMembers of British Prime Minister Boris Johnsons cabinet urged Conservative lawmakers, disgruntled over the prime ministers attendance of a party during lockdown, to wait for an official probe … [+369 chars]"
+    }
+  ]
+}
