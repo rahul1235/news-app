@@ -5,6 +5,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+NOTE: create your own .env file for post and api key as below 
+
+```
+REACT_APP_NEWS_API_KEY='YOUR_NEWS_API_KEY'
+PORT=YOUR_PORT
+```
 
 ### `npm start`
 

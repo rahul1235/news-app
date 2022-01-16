@@ -1,12 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import PropTypes from "prop-types";
 
-export default function Navbar(props) {
-  //   static propTypes = {
-  //     prop: PropTypes,
-  //   };
-
+const Navbar = (props) => {
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -74,4 +69,5 @@ export default function Navbar(props) {
       </nav>
     </div>
   );
-}
+};
+export default Navbar;
