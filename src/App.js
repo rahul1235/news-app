@@ -23,7 +23,7 @@ const App = () => {
           // onLoaderFinished={() => setProgress(0)}
         />
         <NavBar></NavBar>
-        <ScrollToTop></ScrollToTop>
+        <ScrollToTop smooth={true}></ScrollToTop>
         <Routes>
           <Route
             exact
