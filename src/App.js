@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 import ScrollToTop from "react-scroll-to-top";
 
-
 import NavBar from "./components/NavBar";
 import News from "./components/News";
 
@@ -139,6 +138,12 @@ const App = () => {
           ></Route>
         </Routes>
       </Router>
+      <footer className=" footer text-center text-lg-start dark">
+        <div className="text-center p-3">
+          © {new Date().getFullYear()} Copyright Created By {" : "}
+          <a href="mailto:prajapati.rahul373@gmail.com">Rahul Prajapati</a>
+        </div>
+      </footer>
     </>
   );
 };

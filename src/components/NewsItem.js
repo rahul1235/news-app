@@ -21,7 +21,7 @@ const NewsItem = (props) => {
             rel="noreferrer"
             target="_blank"
             href={newsUrl}
-            className="btn btn-sm btn-dark"
+            className="btn btn-sm btn-dark stretched-link"
           >
             Read More
           </a>
