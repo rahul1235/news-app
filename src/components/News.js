@@ -22,7 +22,7 @@ const News = (props) => {
   const getNewsArticles = async (options) => {
     props.setProgress(0);
     const { pageSize, page, country, category } = options;
-    const url = `${process.env.REACT_APP_NEWS_API_URL}top-headlines?country=${country}&apiKey=${props.apiKey}&pageSize=${pageSize}&page=${page}&category=${category}`;
+    const url = `${process.env.REACT_APP_NEWS_API_URL}top-headlines?country=${country}&pageSize=${pageSize}&page=${page}&category=${category}`;
     props.setProgress(30);
     const data = await fetch(url);
     props.setProgress(60);
