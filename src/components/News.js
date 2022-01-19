@@ -62,7 +62,7 @@ const News = (props) => {
   }, []);
 
   return (
-    <div className="container my-3">
+    <div className="container my-3" style={props.modeStyle}>
       <h1 className="text-center" style={{ marginTop: "60px" }}>
         TopTier News - Top {capitalizeFirstLetter(props.category)} Headlines
       </h1>
@@ -88,6 +88,7 @@ const News = (props) => {
                     author={element.author}
                     date={element.publishedAt}
                     source={element.source.name}
+                    modeStyle={props.modeStyle}
                   ></NewsItem>
                 </div>
               );
@@ -110,6 +111,7 @@ News.propTypes = {
   pageSize: PropTypes.number,
   category: PropTypes.string,
   apiKey: PropTypes.string,
+  modeStyle: PropTypes.object,
 };
 
 export default News;

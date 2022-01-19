@@ -12,7 +12,30 @@ const App = () => {
   const pageSize = 20;
   const apiKey = process.env.REACT_APP_NEWS_API_KEY;
   const [progress, setProgress] = useState(10);
+  const [mode, setMode] = useState("light");
+  const toggleMode = () => {
+    if (mode === "light") {
+      setMode("dark");
+      document.body.style.backgroundColor = "black";
+    } else {
+      setMode("light");
+      document.body.style.backgroundColor = "white";
+    }
+  };
 
+  const lightMode = {
+    color: "black",
+    backgroundColor: "white",
+    // border: "1px solid white",
+  };
+  const darkMode = {
+    color: "white",
+    backgroundColor: "black",
+    borderColor: "#5f6368",
+    // border: "1px solid black",
+  };
+
+  const modeStyle = mode === "dark" ? darkMode : lightMode;
   return (
     <>
       <Router>
@@ -22,7 +45,7 @@ const App = () => {
           progress={progress}
           // onLoaderFinished={() => setProgress(0)}
         />
-        <NavBar></NavBar>
+        <NavBar modeStyle={modeStyle} toggleMode={toggleMode}></NavBar>
         <ScrollToTop smooth={true}></ScrollToTop>
         <Routes>
           <Route
@@ -36,6 +59,7 @@ const App = () => {
                 country="in"
                 category="general"
                 apiKey={apiKey}
+                modeStyle={modeStyle}
               ></News>
             }
           ></Route>
@@ -50,6 +74,7 @@ const App = () => {
                 country="in"
                 category="business"
                 apiKey={apiKey}
+                modeStyle={modeStyle}
               ></News>
             }
           ></Route>
@@ -64,6 +89,7 @@ const App = () => {
                 country="in"
                 category="entertainment"
                 apiKey={apiKey}
+                modeStyle={modeStyle}
               ></News>
             }
           ></Route>
@@ -78,6 +104,7 @@ const App = () => {
                 country="in"
                 category="general"
                 apiKey={apiKey}
+                modeStyle={modeStyle}
               ></News>
             }
           ></Route>
@@ -92,6 +119,7 @@ const App = () => {
                 country="in"
                 category="health"
                 apiKey={apiKey}
+                modeStyle={modeStyle}
               ></News>
             }
           ></Route>
@@ -105,6 +133,7 @@ const App = () => {
                 country="in"
                 category="science"
                 apiKey={apiKey}
+                modeStyle={modeStyle}
               ></News>
             }
           ></Route>
@@ -119,6 +148,7 @@ const App = () => {
                 country="in"
                 category="sports"
                 apiKey={apiKey}
+                modeStyle={modeStyle}
               ></News>
             }
           ></Route>
@@ -133,12 +163,13 @@ const App = () => {
                 country="in"
                 category="technology"
                 apiKey={apiKey}
+                modeStyle={modeStyle}
               ></News>
             }
           ></Route>
         </Routes>
       </Router>
-      <footer className=" footer text-center text-lg-start dark">
+      <footer className=" footer text-center text-lg-start dark" style={modeStyle}>
         <div className="text-center p-3">
           © {new Date().getFullYear()} Copyright Created By{" : "}
           <a href="mailto:prajapati.rahul373@gmail.com">Rahul Prajapati</a>

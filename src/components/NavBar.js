@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 const Navbar = (props) => {
   return (
     <div>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <nav
+        className="navbar fixed-top navbar-expand-lg navbar-dark bg-black"
+        style={{
+          borderBottom: "1px solid",
+        }}
+      >
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             TopTier News
@@ -64,6 +69,24 @@ const Navbar = (props) => {
                 </Link>
               </li>
             </ul>
+            <div
+              className={`form-check form-switch text-${
+                props.mode === "light" ? "dark" : "light"
+              } `}
+            >
+              <input
+                className="form-check-input "
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                title="switch dark/light mode"
+                onClick={props.toggleMode}
+                // data-on-text="<i class='bi bi-activity'></i>"
+                // data-off-text="<i class='bi bi-activity'></i>"
+                data-on-text="<i class='fa fa-unlock'></i>"
+                data-off-text="<i class='fa fa-lock'></i>"
+              />
+            </div>
           </div>
         </div>
       </nav>

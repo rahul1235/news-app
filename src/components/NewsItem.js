@@ -4,7 +4,7 @@ const NewsItem = (props) => {
   const { title, description, imageUrl, newsUrl, author, date, source } = props;
   return (
     <div className="my-3">
-      <div className="card">
+      <div className="card" style={props.modeStyle}>
         <div className="d-flex justify-content-end position-absolute end-0">
           <span className="badge rounded-pill bg-danger ">{source}</span>
         </div>
