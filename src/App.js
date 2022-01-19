@@ -26,13 +26,11 @@ const App = () => {
   const lightMode = {
     color: "black",
     backgroundColor: "white",
-    // border: "1px solid white",
   };
   const darkMode = {
     color: "white",
     backgroundColor: "black",
     borderColor: "#5f6368",
-    // border: "1px solid black",
   };
 
   const modeStyle = mode === "dark" ? darkMode : lightMode;
@@ -46,7 +44,15 @@ const App = () => {
           // onLoaderFinished={() => setProgress(0)}
         />
         <NavBar modeStyle={modeStyle} toggleMode={toggleMode}></NavBar>
-        <ScrollToTop smooth={true}></ScrollToTop>
+        <ScrollToTop
+          smooth={true}
+          style={{
+            backgroundColor: modeStyle.color === "white" ? "black" : "white",
+            borderRadius: "unset",
+            boxShadow: "unset",
+          }}
+          color={modeStyle.color}
+        ></ScrollToTop>
         <Routes>
           <Route
             exact
@@ -169,7 +175,10 @@ const App = () => {
           ></Route>
         </Routes>
       </Router>
-      <footer className=" footer text-center text-lg-start dark" style={modeStyle}>
+      <footer
+        className=" footer text-center text-lg-start dark"
+        style={modeStyle}
+      >
         <div className="text-center p-3">
           © {new Date().getFullYear()} Copyright Created By{" : "}
           <a href="mailto:prajapati.rahul373@gmail.com">Rahul Prajapati</a>
