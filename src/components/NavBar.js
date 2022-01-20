@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/toggle.css";
 
 const Navbar = (props) => {
   return (
@@ -69,23 +70,20 @@ const Navbar = (props) => {
                 </Link>
               </li>
             </ul>
-            <div
-              className={`form-check form-switch text-${
-                props.mode === "light" ? "dark" : "light"
-              } `}
-            >
+            <div className="container--toggle">
               <input
-                className="form-check-input "
-                type="checkbox"
+                aria-label=""
                 role="switch"
-                id="flexSwitchCheckChecked"
-                title="switch dark/light mode"
+                type="checkbox"
+                id="toggle"
+                className="toggle--checkbox"
                 onClick={props.toggleMode}
-                // data-on-text="<i class='bi bi-activity'></i>"
-                // data-off-text="<i class='bi bi-activity'></i>"
-                data-on-text="<i class='fa fa-unlock'></i>"
-                data-off-text="<i class='fa fa-lock'></i>"
+                checked={props.active}
+                readOnly
               />
+              <label htmlFor="toggle" className="toggle--label">
+                <span className="toggle--label-background"></span>
+              </label>
             </div>
           </div>
         </div>

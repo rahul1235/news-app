@@ -13,12 +13,16 @@ const App = () => {
   const apiKey = process.env.REACT_APP_NEWS_API_KEY;
   const [progress, setProgress] = useState(10);
   const [mode, setMode] = useState("light");
+  const [active, setActive] = useState(true);
+
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
+      setActive(false);
       document.body.style.backgroundColor = "black";
     } else {
       setMode("light");
+      setActive(true);
       document.body.style.backgroundColor = "white";
     }
   };
@@ -43,7 +47,11 @@ const App = () => {
           progress={progress}
           // onLoaderFinished={() => setProgress(0)}
         />
-        <NavBar modeStyle={modeStyle} toggleMode={toggleMode}></NavBar>
+        <NavBar
+          modeStyle={modeStyle}
+          toggleMode={toggleMode}
+          active={active}
+        ></NavBar>
         <ScrollToTop
           smooth={true}
           style={{
